@@ -5,3 +5,136 @@ body {
     align-items: center;
     margin: 25px;
 }
+
+.introduction {
+    width: $site-width;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__left {
+        width: 635px;
+
+        p {
+            color: $blue;
+            font-size: 22px;
+        }
+    
+        h2 {
+            line-height: 60px;
+            font-size: 40px;
+        }
+    
+        span {
+            color: $blue;
+        }
+    }
+
+    &__right {
+        width: 212px;
+        align-self: flex-end;
+
+        q {
+            quotes: none;
+            color: $grey;
+        }
+
+        q:before {
+            content: "";
+            display: block;
+            width: 15%;
+            border-top: 2px solid $grey;
+            padding-top: 5px;
+        }
+
+    }
+}
+
+.image {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+    width: $site-width;
+    height: 1960px;
+    grid-gap: 20px;
+
+    &__elem1 {
+        grid-column: 1 / 4;
+        grid-row: 1 / 8;
+    }
+
+    &__elem2 {
+        grid-column: 4 / 7;
+        grid-row: 1 / 7;
+    }
+
+    &__elem3 {
+        grid-column: 7 / 10;
+        grid-row: 1 / 11;
+    }
+
+    &__elem4 {
+        grid-column: 1 / 4;
+        grid-row: 8 / 16;
+    }
+
+    &__elem5 {
+        grid-column: 4 / 7;
+        grid-row: 7 / 14;
+    }
+
+    &__elem6 {
+        grid-column: 7 / 10;
+        grid-row: 11 / 18;
+    }
+
+    &__elem7 {
+        grid-column: 1 / 4;
+        grid-row: 16 / 24;
+    }
+
+    &__elem8 {
+        grid-column: 4 / 7;
+        grid-row: 14 / 23;
+    }
+
+    &__elem9 {
+        grid-column: 7 / 10;
+        grid-row: 18 / 27;
+    }
+
+    &__elem10 {
+        grid-column: 1 / 4;
+        grid-row: 24 / 33;
+    }
+
+    &__elem11 {
+        grid-column: 4 / 7;
+        grid-row: 23 / 33;
+    }
+
+    &__elem12 {
+        grid-column: 7 / 10;
+        grid-row: 27 / 33;
+    }
+}
+
+.services {
+    width: $site-width;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+
+    &__content {
+        font-weight: bold;
+        font-size: 28px;
+        width: 635px;
+        line-height: 38px;
+    }
+
+    li {
+        list-style: none;
+    }
+}

@@ -1,0 +1,13 @@
+body {
+    font-family: $ff;
+    display: flex;
+    flex-direction: column;
+    width: 1110px;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}

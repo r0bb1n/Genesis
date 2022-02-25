@@ -125,7 +125,10 @@ body {
     width: $site-width;
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     margin-top: 25px;
+    height: 250px;
+    border-bottom: 2px solid $light-grey;
 
     &__content {
         font-weight: bold;
@@ -137,4 +140,51 @@ body {
     li {
         list-style: none;
     }
+
+    a {
+        text-decoration: none;
+        color: $grey;
+        line-height: 30px;
+    }
+
+    a:hover {
+        border-bottom: 2px solid $blue;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: $site-width;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px solid $light-grey;
+        height: 400px;
+        margin-top: 25px;
+    }
+
+    &__container-title {
+        width: 353px;
+        margin-top: 25px;
+    }
+
+    &__container-right-top, &__container-right-btm {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 750px;
+        margin-top: 25px;
+    }
+
+    &__container-content {
+        width: 190px;
+
+        p {
+            color: $grey;
+        }
+    }
+
 }

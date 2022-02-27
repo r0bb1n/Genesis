@@ -259,6 +259,13 @@ body {
     align-items: center;
     margin-bottom: 25px;
 
+    h2 {
+        font-size: 40px;
+        line-height: 55px;
+        height: 175px;
+        margin: 0;
+    }
+
     &__left {
         width: 475px;
     }

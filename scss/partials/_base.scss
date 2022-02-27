@@ -241,3 +241,42 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+.top {
+    width: $site-width;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+    &__left {
+        width: 475px;
+    }
+
+    &__right {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__input {
+        width: 475px;
+        height: 37px;
+        border: none;
+        border-bottom: 2px solid $light-grey;
+        margin: 23px 0px 10px 0px;
+    }
+
+    &__btn {
+        background-color: $blue;
+        height: 50px;
+        width: 125px;
+        color: white;
+        border: none;
+        margin: 23px 0px 10px 0px;
+    }
+    
+}

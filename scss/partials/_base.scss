@@ -197,6 +197,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 25px;
+    margin-bottom: 25px;
+    height: 343px;
 
     &__content {
         width: 635px;
@@ -219,6 +221,10 @@ body {
         justify-content: space-between;
         border-bottom: 2px solid $light-grey;
         font-size: 18px;
+
+        p:nth-child(2) {
+            font-weight: bold;
+        }
     }
 }
 
@@ -241,6 +247,8 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+/* Start of contact page */
 
 .top {
     width: $site-width;
